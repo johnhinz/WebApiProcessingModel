@@ -17,7 +17,7 @@ namespace WebApiProcessingModel.Controllers
         public IHttpActionResult Get()
         {
             throw new Exception();
-            return Ok("Humber Rocks!");
+            return Ok("Anonymous!");
         }
 
         [Route("auth")]
@@ -25,7 +25,7 @@ namespace WebApiProcessingModel.Controllers
         [CustomAuthorization]
         public IHttpActionResult GetWithAuth()
         {
-            return Ok("You're authorized .... Humber Rocks!");
+            return Ok("You're authorized .... You Rock!");
         }
 
 
